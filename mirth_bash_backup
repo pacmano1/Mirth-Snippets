@@ -4,7 +4,7 @@
 
 backupPath="/home/backups/"
 mccommand_to_run="/usr/local/bin/mccommand"
-mccommand_config_properties="/usr/local/mirthconnect/conf/mirth-cli-config.properties"
+mccommand_config_properties="/usr/local/mirthconnect/conf/mirth-cli-config.properties"   # you must edit the credentials in this file.
 
 # Rest of script no changes needed
 
