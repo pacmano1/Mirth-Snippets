@@ -1,7 +1,7 @@
 // Code Courtesy of DavidM from Mirth Slack
 
 ///////////////////////////////////////////////////////////////////////
-// Included in Global Deploy
+// Locations of these blocks up you user.  e.g. functions probably belong in code templates.
 ///////////////////////////////////////////////////////////////////////
 var dbConnName = 'OurDBConnectionName';
 var OurDB_str = 'OurDB-Connection';
