@@ -99,7 +99,7 @@ function closeDBCP(connDetails)  {
 ///////////////////////////////////////////////////////////////////////
 function queryDB(sql) {
     var channelName = typeof channelId != 'undefined' ? ChannelUtil.getDeployedChannelName(channelId) : 'N/A';
-    var connDetails = globalMap.get("OurDB-Connection");
+    var connDetails = globalMap.get("OurDBConnectionName");
     var dbConn = getDBConn(connDetails);
     if (dbConn === null) {
         logger.error(channelName+" queryDB - dbconn is null disconnected.");
