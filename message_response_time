@@ -1,0 +1,17 @@
+with started as (select message_id, received_date from d_mm1 where connector_name = 'Source' and status = 'T'),
+     max_send_date as (select message_id, max(response_date) as final_send_date
+                       from d_mm1
+                       where status = 'S'
+                         and connector_name != 'Source'
+                       group by message_id),
+     per_message_start_end as (select s.message_id,
+                                      s.received_date,
+                                      msd.final_send_date,
+                                      (extract('epoch' from msd.final_send_date) -
+                                       extract('epoch' from s.received_date)) * 1000 as ms
+
+                               from started s
+                                        join max_send_date msd on msd.message_id = s.message_id)
+select count(*)
+from per_message_start_end
+where ms > 1000;
