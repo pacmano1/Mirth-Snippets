@@ -1,0 +1,29 @@
+Please let me know if any of these don't appear to be correct!
+
+MS JDBC:
+
+SQL Server Auth:
+jdbc:sqlserver://<HOST>[:<PORT>];databaseName=<DB>;user=<USER>;password=<PASSWORD>
+
+Windows Auth:
+jdbc:sqlserver://<HOST>[:<PORT>];databaseName=<DB>;[instanceName=<PARAM>;]user=<USER>;password=<PASSWORD>;integratedSecurity=true;encrypt=true;trustServerCertificate=true
+
+Windows Auth, Current User:
+jdbc:sqlserver://<HOST>[:<PORT>];databaseName=<DB>;[instanceName=<PARAM>;]integratedSecurity=true;
+
+AD with user and password:
+jdbc:sqlserver://<HOST>[:<PORT>];databaseName=<DB>;[instanceName=<PARAM>;]authentication=ActiveDirectoryPassword;selectMethod=cursor
+
+AD Integrated:
+jdbc:sqlserver://<HOST>[:<PORT>];databaseName=<DB>;[instanceName=<PARAM>;]authentication=ActiveDirectoryIntegrated;selectMethod=cursor
+
+JTDS:
+
+SQL Server Auth:
+jdbc:jtds:sqlserver://<HOST>[:<PORT>][/<DB>];user=<USER>;password=<PASSWORD>;ssl=request[;instance=<PARAM>]
+
+Windows Auth:
+jdbc:jtds:sqlserver://<HOST>[:<PORT>]/<DB>;domain=<PARAM2>;useNTLMv2=true;ssl=request[;instance=<PARAM>]
+
+Windows Auth, Current User:
+jdbc:jtds:sqlserver://<HOST>[:<PORT>]/<DB>;domain=<PARAM2>;useNTLMv2=true;ssl=request[;instance=<PARAM>]
