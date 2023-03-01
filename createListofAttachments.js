@@ -1,3 +1,6 @@
+// For either of these you need to then store the var in $co or $c and use the name of that variable in the SMTP sender.  Use only the variable name,
+// it should not have ${ } at all.   
+
 // Smarter Code courtesy of Tony Germano (agermano) from Mirth Slack / Forums.
 
 var attachmentsList = getAttachments().toArray()
