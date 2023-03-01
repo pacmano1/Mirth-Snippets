@@ -1,3 +1,5 @@
+-- not correct, do not use.
+
 with started as (select message_id, received_date from d_mm1 where connector_name = 'Source' and status = 'T'),
      max_send_date as (select message_id, max(response_date) as final_send_date
                        from d_mm1
