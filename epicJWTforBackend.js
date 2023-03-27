@@ -1,4 +1,5 @@
 // Add to code templates https://raw.githubusercontent.com/kjur/jsrsasign/master/jsrsasign-all-min.js
+// Tested with version 10.7.0 
 
 // IMPORTANT In the code template you added you must add this near the top because this library can be used with browsers.
 // var navigator = {}  // fake the fact we have no browser
