@@ -5,8 +5,8 @@
 // var navigator = {}  // fake the fact we have no browser
 // var window = {}     //
 
-// On Epic dev portal, you will need to upload your public key (their documentation is clear 
-// on generating your required rsa keys) and retreive your ClientID
+// On Epic dev portal, you will need to upload your public key, their documentation is clear 
+// on generating your required rsa private and public keys and retreive your ClientID
 
 // Transformer code:
 
