@@ -31,7 +31,6 @@ var payload =
         "iat": iat
     }
 
-// remove         "nbf": 1583524102, from above
 // Generate the JWT
 
 var sHeader = JSON.stringify(header);
