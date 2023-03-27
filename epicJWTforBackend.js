@@ -25,7 +25,7 @@ var privateKey = $cfg('jwt_secret') + ''  // our private key is in $cfg, again E
 var payload =
     {
         "iss": "<your client id from portal>",
-        "sub": "<same client id as above?",
+        "sub": "<same client id as above>",
         "aud": "https://fhir.epic.com/interconnect-fhir-oauth/oauth2/token",
         "jti": "some UUID here",
         "exp": iat + 299,
