@@ -3,7 +3,7 @@
  * Requires https://raw.githubusercontent.com/kjur/jsrsasign/master/jsrsasign-all-min.js as a codetemplate
  * Tested with version 10.7.0
  * IMPORTANT In the code template you added you must add this near the top because this library can be used with browsers.
- * var navigator = window = {}  // fake the fact we have no browser
+ * var navigator = window = {}  // fake the fact we have no browser otherwise function will fail with 'ReferenceError: "navigator" is not defined'
  *
  * On Epic dev portal, you will need to upload your public key, their documentation is clear 
  * on generating your required rsa private and public keys and retreive your ClientID
@@ -11,7 +11,7 @@
  * Using an http sender
  * URL: https://fhir.epic.com/interconnect-fhir-oauth/oauth2/token
  * Method: POST
- * Content Type: x-www-form-urlencoded
+ * Content Type: application/x-www-form-urlencoded
  * Query paramenters:
  * * grant_type                               client_credentials
  * * client_assertion_type                    urn:ietf:params:oauth:client-assertion-type:jwt-bearer
