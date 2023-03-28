@@ -26,7 +26,8 @@
  * @example
  * const clientId = "<your client id from portal>";
  * const privateKey = $cfg('jwt_secret') + '';
- * const jwt = generateEpicFhirJWT(clientId, privateKey);
+ * const jti = '<some UID>'
+ * const jwt = generateEpicFhirJWT(clientId, privateKey, jti);
  * // Use jwt in your http request to the Epic FHIR server.
  */
 function generateEpicFhirJWT(clientId, privateKey) {
@@ -43,7 +44,7 @@ function generateEpicFhirJWT(clientId, privateKey) {
         "iss": clientId,
         "sub": clientId,
         "aud": "https://fhir.epic.com/interconnect-fhir-oauth/oauth2/token",
-        "jti": "some UUID here",
+        "jti": jti,
         "exp": iat + 299,
         "iat": iat
     };
