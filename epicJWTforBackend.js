@@ -15,7 +15,7 @@
  * Query paramenters:
  * * grant_type                               client_credentials
  * * client_assertion_type                    urn:ietf:params:oauth:client-assertion-type:jwt-bearer
- * * client_assertion                         ${jwt}
+ * * client_assertion                         ${jwt} // Assumes you assgined the return value of the below function to $c, $co, etc.
  * 
  *
  * @function generateEpicFhirJWT
