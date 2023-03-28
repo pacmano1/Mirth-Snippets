@@ -21,6 +21,7 @@
  * @function generateEpicFhirJWT
  * @param {string} clientId - Your client ID from the Epic portal.
  * @param {string} privateKey - Your private RSA key.
+ * @param {string} jti - a UUID you generate.
  * @returns {string} - The generated JWT.
  *
  * @example
