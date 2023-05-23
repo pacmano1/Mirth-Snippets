@@ -22,6 +22,7 @@
  * @param {string} clientId - Your client ID from the Epic portal.
  * @param {string} privateKey - Your private RSA key.
  * @param {string} jti - a UUID you generate.
+ * @param {string} aud - the epic endpoint, e.g. "https://fhir.epic.com/interconnect-fhir-oauth/oauth2/token"
  * @returns {string} - The generated JWT.
  *
  * @example
@@ -31,7 +32,7 @@
  * const jwt = generateEpicFhirJWT(clientId, privateKey, jti);
  * // Use jwt in your http request to the Epic FHIR server.
  */
-function generateEpicFhirJWT(clientId, privateKey) {
+function generateEpicFhirJWT(clientId, privateKey, aud) {
     // Time
     const iat = Math.floor(Date.now() / 1000);
 
@@ -44,7 +45,7 @@ function generateEpicFhirJWT(clientId, privateKey) {
     const payload = {
         "iss": clientId,
         "sub": clientId,
-        "aud": "https://fhir.epic.com/interconnect-fhir-oauth/oauth2/token",
+        "aud": aud,
         "jti": jti,
         "exp": iat + 299,
         "iat": iat
