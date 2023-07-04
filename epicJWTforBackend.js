@@ -1,6 +1,7 @@
 /**
  * Generates a JWT for Epic FHIR server authentication.
  * Requires https://raw.githubusercontent.com/kjur/jsrsasign/master/jsrsasign-all-min.js as a codetemplate
+ * jsrassign at https://github.com/kjur/jsrsasign
  * Tested with version 10.7.0
  * IMPORTANT In the code template you added you must add this near the top because this library can be used with browsers.
  * var navigator = window = {}  // fake the fact we have no browser otherwise function will fail with 'ReferenceError: "navigator" is not defined'
