@@ -33,7 +33,7 @@
  * const jwt = generateEpicFhirJWT(clientId, privateKey, jti);
  * // Use jwt in your http request to the Epic FHIR server.
  */
-function generateEpicFhirJWT(clientId, privateKey, aud) {
+function generateEpicFhirJWT(clientId, privateKey, jti, aud) {
     // Time
     const iat = Math.floor(Date.now() / 1000);
 
