@@ -1,4 +1,5 @@
 /**
+ * NOTE: This works but is very slow compared to using a java library.
  * Generates a JWT for Epic FHIR server authentication.
  * Requires https://raw.githubusercontent.com/kjur/jsrsasign/master/jsrsasign-all-min.js as a codetemplate
  * jsrassign at https://github.com/kjur/jsrsasign
