@@ -1,18 +1,21 @@
 /**
  * This function generates a JSON Web Token (JWT) following the JOSE (Javascript Object Signing and Encryption) standard 
  * for communication with EPIC's FHIR (Fast Healthcare Interoperability Resources) server.
- * IMPORTANT, most RSA keys are in the wrong format, use:
+ * IMPORTANT: most RSA keys are in the wrong format, use:
  * openssl pkcs8 -topk8 -inform PEM -outform PEM -in myprivatekey.pem -out my_private_key_pkcs8.pem -nocrypt
- * 
+ * IMPORTANT: Add https://github.com/pacmano1/Mirth-Snippets/blob/main/nimbus-jose-jwt.jar to Mirth's custom lib directory
+ * nimbus-jose-jwt.jar in this repo includes gson.2.10.1.jar bundled.
  * @param {string} clientId - The client identifier for the system using the JWT for authorization.
- * @param {string} privateKey - The private key used to sign the JWT, in RSA format
+ * @param {string} privateKey - The private key used to sign the JWT, in RSA format.
  * @param {string} jti - JSON Web Token ID, a unique identifier for the JWT.
  * @param {string} aud - The audience of the JWT, typically the URI of the server that will receive the JWT.
+ * @param {string} alg - The JWS algorithm to be used for signing the JWT. Default is 'RS256'.
  *
  * @returns {string} - A serialized JSON Web Token.
  */
-function generateEpicFhirJoseJWT(clientId, privateKey, jti, aud) {
+function generateEpicFhirJoseJWT(clientId, privateKey, jti, aud, alg) {
     // Get current timestamp in seconds (epoch time)
+    alg = alg || 'RS256'
     var iat = Math.floor(new Date().getTime() / 1000);
 
     // Remove any non-base64 characters from the private key
@@ -47,8 +50,8 @@ function generateEpicFhirJoseJWT(clientId, privateKey, jti, aud) {
         .issueTime(new java.util.Date(iat * 1000))
         .build();
 
-    // Create the header using the JWS Algorithm RS256 and the JWT id
-    var header = jwsHeader.Builder(jwsAlgorithm.RS256).keyID(jti).build();
+    // Create the header using the JWS Algorithm passed in argument and the JWT id
+    var header = jwsHeader.Builder(jwsAlgorithm[alg]).keyID(jti).build();
 
     // Create the JWT using the header and claims set
     var jwt = signedJWT(header, claimsSet);
