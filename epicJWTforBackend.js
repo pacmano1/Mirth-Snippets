@@ -1,5 +1,5 @@
 /**
- * NOTE: This works but is very slow compared to using a java library.
+ * NOTE: This works but is very slow compared to using a java library.  See https://github.com/pacmano1/Mirth-Snippets/blob/main/epicJWTusingNimbusJava.js
  * Generates a JWT for Epic FHIR server authentication.
  * Requires https://raw.githubusercontent.com/kjur/jsrsasign/master/jsrsasign-all-min.js as a codetemplate
  * jsrassign at https://github.com/kjur/jsrsasign
