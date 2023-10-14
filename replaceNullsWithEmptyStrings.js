@@ -1,5 +1,5 @@
 // Recursive function to replace null values with empty strings in a JSON object.
-// Courtesy of Tony Germano from Mirth Slack aks @tonygermano on GitHub
+// Courtesy of Tony Germano from Mirth Slack aka @tonygermano on GitHub
 // Usage: replaceNullsWithEmptyStrings(msg);
 
 function replaceNullsWithEmptyStrings(obj) {
