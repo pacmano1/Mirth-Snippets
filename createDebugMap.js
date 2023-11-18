@@ -1,4 +1,9 @@
 /**
+ * Author Tony Germano
+ * Discussion originated on Mirth Slack from discussion started by Sean Phalen
+ */
+
+/**
  * Creates a debug map function that conditionally logs values.
  * @param {Map} delegateMap - A map to store debug values.
  * @returns {Function} A function for conditional debugging.
