@@ -2,7 +2,7 @@
  * ResultSetUtil
  * A utility for working with result sets from a database.
  * 
- * Courtesy of @agermano on Mirth Slack
+ * Courtesy of @agermano, certified genuis. From Mirth Slack
  */
 
 var ResultSetUtil = {
