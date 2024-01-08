@@ -1,4 +1,5 @@
 // Import required classes from the SSH library
+// Needs sshj-0.35.0.jar and eddsa-0.3.0.jar as a custom resource for your channel.
 var PromiscuousVerifier = net.schmizz.sshj.transport.verification.PromiscuousVerifier;
 var SSHClient = net.schmizz.sshj.SSHClient;
 var SFTPClient = net.schmizz.sshj.sftp.SFTPClient;
