@@ -1,12 +1,11 @@
-// Import required classes from the SSH library, 
-// this uses https://github.com/hierynomus/sshj, you must add this as a channel dependency.
+// Import required classes from the SSH library
 var PromiscuousVerifier = net.schmizz.sshj.transport.verification.PromiscuousVerifier;
 var SSHClient = net.schmizz.sshj.SSHClient;
 var SFTPClient = net.schmizz.sshj.sftp.SFTPClient;
 var File = java.io.File;
 
 // Define a function for SFTP file transfer
-function sftpFileTransfer(serverName, userName, password, from_file_name, to_file_name) {
+function sftpFileTransfer(serverName, userName, password, privateKeyPath, from_file_name, to_file_name) {
     var ssh = new SSHClient();
     var file_sent = false;
 
@@ -17,8 +16,13 @@ function sftpFileTransfer(serverName, userName, password, from_file_name, to_fil
         // Configure the host key verifier (remove in production, as it's not secure)
         ssh.addHostKeyVerifier(new PromiscuousVerifier());
 
-        // Authenticate using password (for private key, use ssh.authPublickey)
-        ssh.authPassword(userName, password);
+        if (privateKeyPath) {
+            // Authenticate using private key
+            ssh.authPublickey(userName, privateKeyPath);
+        } else {
+            // Authenticate using password
+            ssh.authPassword(userName, password);
+        }
 
         // Create an SFTP client
         var sftp = ssh.newSFTPClient();
@@ -40,16 +44,34 @@ function sftpFileTransfer(serverName, userName, password, from_file_name, to_fil
     return file_sent; // Return true if the file was sent successfully
 }
 
-// Usage example:
-var serverName = 'sftp.someserver.com';
-var userName = 'someuser';
-var password = 'somepassword';
-var from_file_name = 'fromSomefile.txt';
-var to_file_name = 'toSomefile.txt';
+// Usage examples:
 
-var fileSent = sftpFileTransfer(serverName, userName, password, from_file_name, to_file_name);
+// Using username/password authentication
+var serverName1 = 'sftp.someserver.com';
+var userName1 = 'someuser';
+var password1 = 'somepassword';
+var privateKeyPath1 = null;
+var from_file_name1 = 'fromSomefile.txt';
+var to_file_name1 = 'toSomefile.txt';
 
-if (fileSent) {
+var fileSent1 = sftpFileTransfer(serverName1, userName1, password1, privateKeyPath1, from_file_name1, to_file_name1);
+
+if (fileSent1) {
+    logger.info('File sent successfully.');
+} else {
+    logger.error('File transfer failed.');
+}
+
+// Using private key authentication
+var serverName2 = 'sftp.someserver.com';
+var userName2 = 'someuser';
+var privateKeyPath2 = 'path/to/private/key.pem';
+var from_file_name2 = 'fromSomefile.txt';
+var to_file_name2 = 'toSomefile.txt';
+
+var fileSent2 = sftpFileTransfer(serverName2, userName2, null, privateKeyPath2, from_file_name2, to_file_name2);
+
+if (fileSent2) {
     logger.info('File sent successfully.');
 } else {
     logger.error('File transfer failed.');
