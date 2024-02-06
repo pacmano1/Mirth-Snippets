@@ -1,4 +1,6 @@
-Thanks @Anthony Master from Mirth Slack:
+Thanks to this post: https://forums.mirthproject.io/forum/mirth-connect/support/184605-sftp-fails-because-server-wants-ssh-rsa
+
+and @Anthony Master from Mirth Slack:
 
 SFTP in 4.5 dropped support for ssh-rsa algo and a few others. The workaround is to add these two options in each affected SFTP connectpr settings.
 
