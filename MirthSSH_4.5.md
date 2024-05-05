@@ -13,3 +13,6 @@ Algorithm negotiation fail: algorithmName="cipher.c2s"
 ```
 ![image](https://github.com/pacmano1/Mirth-Snippets/assets/44065187/3cbf67cf-e47a-44dd-b8eb-d0e78de3b1c8)
 
+I also found I needed this:
+
+![image](https://github.com/pacmano1/Mirth-Snippets/assets/44065187/bf1b3fe6-58e3-4960-b6a6-977a49260c8f)
