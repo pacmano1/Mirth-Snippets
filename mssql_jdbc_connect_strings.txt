@@ -19,11 +19,4 @@ jdbc:sqlserver://<HOST>[:<PORT>];databaseName=<DB>;[instanceName=<PARAM>;]authen
 
 JTDS:
 
-SQL Server Auth:
-jdbc:jtds:sqlserver://<HOST>[:<PORT>][/<DB>];user=<USER>;password=<PASSWORD>;ssl=request[;instance=<PARAM>]
-
-Windows Auth:
-jdbc:jtds:sqlserver://<HOST>[:<PORT>]/<DB>;domain=<PARAM2>;useNTLMv2=true;ssl=request[;instance=<PARAM>]
-
-Windows Auth, Current User:
-jdbc:jtds:sqlserver://<HOST>[:<PORT>]/<DB>;domain=<PARAM2>;useNTLMv2=true;ssl=request[;instance=<PARAM>]
+REMOVED.   Use MS JDBC since it is maintained.
