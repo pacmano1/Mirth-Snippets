@@ -1,5 +1,5 @@
 
-# Creating a Self-Signed Certificate for securing Microsoft SQL Server with and required Mirth Connection Strings
+# Creating a Self-Signed Certificate for securing Microsoft SQL Server with TLS and required Mirth Connection Strings
 
 This guide will help you create a self-signed certificate using OpenSSL, which can be used in Microsoft SQL Server. 
 
