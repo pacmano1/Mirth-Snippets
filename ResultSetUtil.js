@@ -4,7 +4,20 @@
  * 
  * Courtesy of @agermano, certified genius that sometimes forgets why he wrote stuff. From Mirth Slack
  */
+/*
+ _____ _                 _        
+|_   _| |__   __ _ _ __ | | _____ 
+  | | | '_ \ / _` | '_ \| |/ / __|
+  | | | | | | (_| | | | |   <\__ \
+  |_| |_| |_|\__,_|_| |_|_|\_\___/
 
+ _____                 
+|_   _|__  _ __  _   _ 
+  | |/ _ \| '_ \| | | |
+  | | (_) | | | | |_| |
+  |_|\___/|_| |_|\__, |
+                 |___/
+*/
 var ResultSetUtil = {
     /**
      * getRowLabels
