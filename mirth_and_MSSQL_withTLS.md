@@ -9,7 +9,7 @@ The certificate will include the proper key usage and extended key usage propert
 For mirth.properties assuming a local named user (not AD):
 ```text
 database = sqlserver
-database.url = jdbc:jtds:sqlserver://yourseriver:1433/mirthdb;encrypt=true;trustServerCertificate=true
+database.url = jdbc:jtds:sqlserver://yourserver:1433/mirthdb;encrypt=true;trustServerCertificate=true
 database.username = someuser
 database.password = somepassword
 ```
