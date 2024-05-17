@@ -7,6 +7,23 @@ function replaceNullsWithEmptyStrings(obj) {
 }
 
 // Example usage:
-// var msgWithNulls = { name: "John", age: null, address: { street: "123 Main St", city: null } };
-// var msgWithoutNulls = replaceNullsWithEmptyStrings(msgWithNulls);
-// logger.info(msgWithoutNulls);
+var msgWithNulls = {
+  name: "John",
+  age: null,
+  address: {
+    street: "123 Main St",
+    city: null
+  }
+};
+var msgWithoutNulls = replaceNullsWithEmptyStrings(msgWithNulls);
+logger.info(msgWithoutNulls);
+
+// Result:
+// {
+//   name: "John",
+//   age: "",
+//   address: {
+//     street: "123 Main St",
+//     city: ""
+//   }
+// }
