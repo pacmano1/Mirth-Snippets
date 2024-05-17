@@ -5,6 +5,7 @@ This guide will help you create a self-signed certificate using OpenSSL, which c
 
 The certificate will include the proper key usage and extended key usage properties required for server authentication.
 
+# Mirth Notes
 For mirth.properties assuming a local named user (not AD):
 ```text
 database = sqlserver
