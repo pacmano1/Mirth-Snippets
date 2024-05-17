@@ -1,11 +1,11 @@
 
-# Creating a Self-Signed Certificate for Microsoft SQL Server
+# Creating a Self-Signed Certificate for Microsoft SQL Server and Mirth Connection Strings
 
 This guide will help you create a self-signed certificate using OpenSSL, which can be used in Microsoft SQL Server. 
 
 The certificate will include the proper key usage and extended key usage properties required for server authentication.
 
-For mirth.properties:
+For mirth.properties assuming a local named user (not AD):
 ```text
 database = sqlserver
 database.url = jdbc:jtds:sqlserver://yourseriver:1433/mirthdb;encrypt=true;trustServerCertificate=true
@@ -13,7 +13,7 @@ database.username = someuser
 database.password = somepassword
 ```
 
-For a database reader:
+For a database reader ssuming a local named user (not AD)::
 ```text
 jdbc:sqlserver://yourserver:1433;databaseName=junk;encrypt=true;trustServerCertificate=true
 ```
