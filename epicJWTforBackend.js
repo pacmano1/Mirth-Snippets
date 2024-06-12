@@ -1,3 +1,7 @@
+// ******
+// Note: I use https://github.com/pacmano1/Mirth-Snippets/blob/main/epicJWTusingNimbusJava.js
+// ******
+
 /**
  * NOTE: This works but is very slow compared to using a java library.  See https://github.com/pacmano1/Mirth-Snippets/blob/main/epicJWTusingNimbusJava.js
  * Generates a JWT for Epic FHIR server authentication.
