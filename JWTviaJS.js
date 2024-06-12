@@ -1,3 +1,6 @@
+// ******
+// Note: I use https://github.com/pacmano1/Mirth-Snippets/blob/main/epicJWTusingNimbusJava.js
+// ******
 // I did not create this. 
 // Posted but bharbhar at https://github.com/nextgenhealthcare/connect/discussions/5503#discussioncomment-4063129
 // CryptoJS is a google library, 
