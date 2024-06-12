@@ -1,3 +1,6 @@
+// ******
+// Note: I use https://github.com/pacmano1/Mirth-Snippets/blob/main/epicJWTusingNimbusJava.js
+// ******
 // I did not create this
 // Posted by jcurry5 at https://github.com/nextgenhealthcare/connect/discussions/5503#discussioncomment-4031411
 // jose4j security library required
