@@ -3,7 +3,7 @@
  * for communication with EPIC's FHIR (Fast Healthcare Interoperability Resources) server.   (That was the specific use case)
  * IMPORTANT: most RSA keys are in the wrong format, use:
  * openssl pkcs8 -topk8 -inform PEM -outform PEM -in myprivatekey.pem -out my_private_key_pkcs8.pem -nocrypt
- * IMPORTANT: Add https://github.com/pacmano1/Mirth-Snippets/blob/main/nimbus-jose-jwt.jar to Mirth's custom lib directory
+ * IMPORTANT: Add https://github.com/pacmano1/Mirth-Snippets/blob/main/nimbus-jose-jwt.jar to a resource directory.
  * nimbus-jose-jwt.jar in this repo includes gson.2.10.1.jar bundled.
  * @param {string} clientId - The client identifier for the system using the JWT for authorization.
  * @param {string} privateKey - The private key used to sign the JWT, in RSA format.
