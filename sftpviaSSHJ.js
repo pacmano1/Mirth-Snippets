@@ -1,3 +1,4 @@
+// NOTE: No longer needed with upgrade jsch library in Mirth Connect.
 // Import required classes from the SSH library
 // Needs sshj-0.35.0.jar and eddsa-0.3.0.jar as a custom resource for your channel.
 var PromiscuousVerifier = net.schmizz.sshj.transport.verification.PromiscuousVerifier;
