@@ -9,7 +9,7 @@ var attachmentsList = getAttachments().toArray()
          
 
          
-// Dumber code:
+// Dumber code from yours truly:
 
 var attachment_list = getAttachmentIds()
 var attachmentsList = Lists.list()
