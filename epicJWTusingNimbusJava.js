@@ -1,5 +1,5 @@
 /**
- * This function generates a JSON Web Token (JWT) following the Nimbux (Javascript Object Signing and Encryption) standard 
+ * This function generates a JSON Web Token (JWT) 
  * for communication with EPIC's FHIR (Fast Healthcare Interoperability Resources) server.   (That was the specific use case)
  * IMPORTANT: most RSA keys are in the wrong format, use:
  * openssl pkcs8 -topk8 -inform PEM -outform PEM -in myprivatekey.pem -out my_private_key_pkcs8.pem -nocrypt
