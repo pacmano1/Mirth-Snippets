@@ -13,12 +13,16 @@ For those who prefer to work directly within the Mirth Connect environment, [@od
 - **Code Template**: [@odoodo's Automatic Mirth Backup](https://forums.mirthproject.io/forum/mirth-connect/support/16298-code-template-automatic-mirth-backup)
 
 ## 3. [@pacmano1](https://github.com/pacmano1)'s Bash Script
-If you prefer command-line tools, [@pacmano1](https://github.com/pacmano1) has created a bash script that can be used to back up Mirth Connect configurations. This script is great for users who are comfortable working in a Linux environment and prefer scripting their backup processes via cron.
+If you prefer command-line tools, [@pacmano1](https://github.com/pacmano1) has created a bash script that can be used to back up Mirth Connect configurations. This script is great for users who are comfortable working in a Linux environment and prefer scripting their backup processes.
 
 - **Bash Script**: [@pacmano1's Mirth Backup Script](https://github.com/pacmano1/Mirth-Snippets/blob/main/mirth_bash_backup.sh)
 
 ## 4. GitHub-Based Methods
-In addition to the above tools, there are several GitHub-based methods that provide more advanced options for integrating Mirth Connect backups with version control systems like Git. These methods are ideal for users who want to maintain a history of their configurations and collaborate with a team.
+For users who prefer integrating Mirth Connect backups with version control systems like Git, the following GitHub-based tools provide advanced options for managing and maintaining a history of your Mirth Connect configurations:
+
+- **Innovar Healthcare's Channel History Git Plugin**: Innovar Healthcare has developed a Git plugin specifically for Mirth Connect that allows you to maintain a history of your channel configurations directly within Git.
+  - **GitHub Repository**: [Innovar Healthcare Channel History Git Plugin](https://github.com/Innovar-Healthcare/Channel-History-Git-Plugin)
+  - **Download & User Guide**: [Innovar Healthcare Plugin Guide](https://innovar-userdocuments.s3.us-east-2.amazonaws.com/index.html?prefix=mirth_plugins/role-based/)
 
 - **Git Integration for Mirth Connect**: [BrightCodeCompany's Git Integration](https://brightcodecompany.com/gitintegration)
 
