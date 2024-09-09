@@ -1,3 +1,5 @@
+// Copyright (c) [2024] [Diridium Technologies Inc.  https://diridium.com]
+// 
 // NOTE: No longer needed with upgrade jsch library in Mirth Connect.
 // Import required classes from the SSH library
 // Needs sshj-0.35.0.jar and eddsa-0.3.0.jar as a custom resource for your channel.
