@@ -1,3 +1,5 @@
+// Copyright (c) [2024] [Diridium Technologies Inc.  https://diridium.com]
+// 
 /**
  * Creates a directory if it does not already exist.
  * 
