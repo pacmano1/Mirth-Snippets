@@ -1,3 +1,5 @@
+// Copyright (c) [2024] [Diridium Technologies Inc.  https://diridium.com]
+// 
 // tested using node 16
 // post json below to http://yourip:3000/bb
 // {
