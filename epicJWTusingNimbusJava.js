@@ -1,3 +1,5 @@
+// Copyright (c) [2024] [Diridium Technologies Inc.  https://diridium.com]
+// 
 /**
  * This function generates a JSON Web Token (JWT) 
  * for communication with EPIC's FHIR (Fast Healthcare Interoperability Resources) server.   (That was the specific use case)
