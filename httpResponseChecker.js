@@ -1,3 +1,5 @@
+// Copyright (c) [2024] [Diridium Technologies Inc.  https://diridium.com]
+
 try {
     msg = JSON.parse(msg)             // we are going to reset msg to be its value in JSON here.
     $co('isJSONresponse', true)
