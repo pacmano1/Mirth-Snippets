@@ -1,3 +1,5 @@
+// Copyright (c) [2024] [Diridium Technologies Inc.  https://diridium.com]
+// 
 // Just an example of how to create a java thingy that evaluates on poll.  In this case it returns yesterday in yyyyMMdd.
 
 function createDateRetriever() {
