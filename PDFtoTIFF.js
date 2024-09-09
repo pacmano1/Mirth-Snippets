@@ -1,3 +1,5 @@
+// Copyright (c) [2024] [Diridium Technologies Inc.  https://diridium.com]
+// 
 // converts mulitpage pdf to tif file per page
 
 var PDFRenderer = Packages.org.apache.pdfbox.rendering.PDFRenderer;
