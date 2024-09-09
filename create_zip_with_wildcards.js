@@ -1,3 +1,5 @@
+// Copyright (c) [2024] [Diridium Technologies Inc.  https://diridium.com]
+// 
 // Import necessary Java classes
 var File = Packages.java.io.File;
 var FileInputStream = Packages.java.io.FileInputStream;
