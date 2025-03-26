@@ -1,4 +1,4 @@
-/* Note - I did not author this, I don't know who did.  Happy to give credit where due, just message me. */
+/* Author: Eric Butterfield */
 
 /**
 	Executes a SQL statement using a shared database connection stored in the Global Map. If the
