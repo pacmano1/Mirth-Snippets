@@ -7,7 +7,7 @@ This repository contains various code snippets and utilities for working with Mi
 
 The repository is organized by different use cases. Below is a summary of the main scripts and documentation included in this repository.
 
-### Mirth Connect Related Scripts
+### Open Integratipn Engine Related Scripts
 - **AWS_getSecret.js**: Retrieves secrets from AWS Secrets Manager for use within Mirth Connect.
 - **ActiveMQ_JMS_Listener.js**: Script to listen for messages on ActiveMQ using JMS.
 - **ActiveMQ_JMS_Sender.js**: Script to send messages to ActiveMQ using JMS.
