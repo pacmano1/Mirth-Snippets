@@ -1,5 +1,5 @@
 
-# Mirth-Snippets
+# Open Integratipn Engine Snippets
 
 This repository contains various code snippets and utilities for working with Mirth Connect, AWS, databases, JWT, and other integration-related tasks.
 
