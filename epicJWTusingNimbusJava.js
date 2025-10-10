@@ -9,7 +9,7 @@
  * openssl genrsa -out myprivatekey.pem 2048
  * openssl pkcs8 -topk8 -inform PEM -outform PEM -in myprivatekey.pem -out my_private_key_pkcs8.pem -nocrypt
  * openssl rsa -in myprivatekey.pem -pubout -out epic-public.pem
- * Under Settings... Resources create a Resoruce.  The resource directory you create (e.g. /opt/oie/jwt) needs nimbus-jose-jwt-10.3.1.jar 
+ * Under Settings... Resources create a Resoruce.  The resource directory you create (e.g. /opt/oie/jwt) needs nimbus-jose-jwt-10.3.1.jar which, as Chris Gibson now knows, should be retrieved from Maven.
  * @param {string} clientId - The client identifier for the system using the JWT for authorization.
  * @param {string} privateKey - The private key used to sign the JWT, in RSA format.
  * @param {string} jti - JSON Web Token ID, a unique identifier for the JWT.
