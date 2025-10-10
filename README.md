@@ -28,7 +28,6 @@ The repository is organized by different use cases. Below is a summary of the ma
 - **JWTviaJose4jlib.js**: Generates JWT tokens using the Jose4j Java library. 
 - **epicJWTforBackend_uses_jsrassign.js**: Generates JWT for backend systems using jsrassign.
 - **epicJWTusingNimbusJava.js**: Generates JWT using the Nimbus Java JWT library.   I USE THIS ONE
-- **nimbus-jose-jwt.jar**: JAR file for Nimbus Jose JWT library.  NEEDED FOR epicJWTusingNimbusJava
 
 ### File Manipulation Utilities
 - **PDFtoTIFF.js**: Converts PDF files to TIFF format.
